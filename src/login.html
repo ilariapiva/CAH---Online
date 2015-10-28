@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAH - Online</title>
+</head>
+<body class="black">
+  <div class="row" class="login-box-body">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="login.html"><img src="img/logo.png" alt="Cards Against Humanity"></a>
+      </div>
+      <div class="login-box-body">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 box">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email
+               <i class="material-icons left">email</i>
+             </label>
+           </div>
+         </div>
+         <div class="row">
+          <div class="input-field col s12 box">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password
+              <i class="material-icons left">lock</i>
+            </label>
+          </div>
+        </div>
+      </form>  
+      <div class="row">
+        <div class="col s12">
+          <p>
+            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+            <label for="filled-in-box">Ricordami</label>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <button id="btn-login" class="btn waves-effect waves-light botton" type="submit" name="action" >Accedi
+            <i class="material-icons right">send</i>
+          </button> 
+        </div>
+      </div>              
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/client/libs/socket.io-1.3.5.js"></script>
+<script src="js/client/client.js"></script>
+
+</html>

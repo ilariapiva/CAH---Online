@@ -1,0 +1,63 @@
+.botton {
+  float: right !important;
+}
+
+.box{
+  margin-left: -13px !important;
+}
+
+.login-logo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.login-logo a {
+  color: #ffffff;
+}
+.login-page {
+  background: #ffffff;
+}
+.login-box {
+  width: 360px;
+  margin: 2% auto;
+}
+
+.login-box-body {
+  background: #ffffff;
+  padding: 15px;
+  color: #444;
+  border-top: 0;
+  color: #666;
+}
+
+.user-menu > .dropdown-menu {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding: 1px 0 0 0;
+  border-top-width: 0;
+  width: 280px;
+}
+
+.dropdown-toggle{
+  color: #ffffff;
+  background-color: #163758;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+  margin-bottom: 0;
+  margin-left: 230px;
+  border: none;
+  min-height: 50px;
+  border-radius: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden!important;
+}
