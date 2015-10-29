@@ -25,15 +25,20 @@ io.sockets.on("connection", function(socket) {
 			}
 
 	});
+
+	socket.on("register", function(data) {
+		console.log("register");
+		socket.emit("register_confirmed", {nclient: 15});
+	});
 	
 	socket.on("disconnect", function(data) {
 	});
 });
 
-app.use("/", express.static(__dirname + '/public'));
+app.use("/", express.static(__dirname + ' '));
 
 app.get("/", function(req, res) {
-	res.sendFile(__dirname + "/public/index.html");
+	res.sendFile(__dirname + "login.html");
 });
 
 server.listen(8080, "localhost");

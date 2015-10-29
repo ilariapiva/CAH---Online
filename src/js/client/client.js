@@ -19,6 +19,19 @@ $(document).ready(function() {
 	connectBtn = $("#btn-login");
 	connectBtn.on("click", function() {
 		console.log("Botton clicked.");
-		socket.emit("login",{user: $("#email").val(), password: $("#password").val()});
+		socket.emit("login",{user: $("#email-login").val(), password: $("#password-login").val()});
 	});
+
+	socket.on("register_confirmed", function(data) {
+		console.log("Register confirmed.", data.nclient);
+		localStorage.setItem("myVar", data.nclient);
+		$(location).attr('href', "login.html");
+	});
+
+	connectBtn = $("#btn-sign");
+	connectBtn.on("click", function() {
+		console.log("Botton clicked.");
+		socket.emit("register",{user: $("#email-register").val(), password: $("#password-register").val()});
+	});
+
 });
