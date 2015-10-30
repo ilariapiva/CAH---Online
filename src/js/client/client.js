@@ -19,7 +19,7 @@ $(document).ready(function() {
 	connectBtn = $("#btn-login");
 	connectBtn.on("click", function() {
 		console.log("Botton clicked.");
-		socket.emit("login",{user: $("#email-login").val(), password: $("#password-login").val()});
+		socket.emit("login",{email: $("#email-login").val(), password: $("#password-login").val()});
 	});
 
 	socket.on("register_confirmed", function(data) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
 	connectBtn = $("#btn-sign");
 	connectBtn.on("click", function() {
 		console.log("Botton clicked.");
-		socket.emit("register",{user: $("#email-register").val(), password: $("#password-register").val()});
+		socket.emit("register",{email: $("#email-register").val(), password: $("#password-register").val()});
 	});
 
 });

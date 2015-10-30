@@ -12,7 +12,7 @@ io.sockets.on("connection", function(socket) {
 	
 	socket.on("login", function(data) {
 		console.log("Login");
-		if (data.user == "ilaria") {
+		if (data.email == "ilaria") {
 			if (data.password == "boci") {
 				socket.emit("login_confirmed", {nclient: 15});
 			}
@@ -28,7 +28,13 @@ io.sockets.on("connection", function(socket) {
 
 	socket.on("register", function(data) {
 		console.log("register");
-		socket.emit("register_confirmed", {nclient: 15});
+		if (data.email != "ilaria") {
+			
+				socket.emit("register_confirmed", {nclient: 15});
+		}
+		else{
+				socket.emit("register_error", {err: "user error"});
+			}
 	});
 	
 	socket.on("disconnect", function(data) {
