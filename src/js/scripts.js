@@ -46,7 +46,7 @@ $(function(){
   };
 
   var dots = {
-    nb: 250,
+    nb: 550,
     distance: 100,
     d_radius: 150,
     array: []
