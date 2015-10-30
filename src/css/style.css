@@ -10,10 +10,20 @@ body {
   background: #ffffff ;
   margin: 25px auto;
   width: 390px;
-  height: 340px;
+  height: 330px;
   position: relative;
   font-family: 'Comic Sans MS';
 }
+
+.form-register {
+  height: 355px;
+}
+
+.form-reset
+{
+  height: 305px;
+}
+
 .tabs {
   background: #349e92;
   height: 40px;
