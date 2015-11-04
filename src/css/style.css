@@ -10,7 +10,7 @@ body {
   background: #ffffff  !important;
   margin: 25px auto !important;
   width: 390px !important;
-  height: 330px !important;
+  height: 355px !important;
   position: relative !important;
   font-family: 'Comic Sans MS' !important;
 }
@@ -24,52 +24,10 @@ body {
   height: 305px !important;
 }
 
-.tabs {
-  background: #ffffff !important;
-  height: 40px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style-type: none !important;
-  width: 100% !important;
-  position: relative !important;
-  display: block !important;
-  margin-bottom: 20px !important;
-  border-bottom: 2px solid #4db6ac !important;
-}
-.tabs li {
-  display: block !important;
-  float: left !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.tabs a {
-  background: #ffffff !important;
-  display: block !important;
-  float: left !important;
-  text-decoration: none !important;
-  color: black !important;
-  font-size: 16px !important;
-  padding: 12px 22px 12px 22px !important;
-  border-bottom: 2px solid #4db6ac !important;
-
-}
-.tabs li:last-child a {
-  border-right: none !important;
-  width: 174px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  text-align: center !important;
-}
-.tabs a.active {
-  background: #4db6ac  !important;
-  border-right: none !important;
-  -webkit-transition: all 0.5s linear !important;
-  -moz-transition: all 0.5s linear !important;
-  transition: all 0.5s linear !important;
-}
 .form-action {
   padding: 0 20px !important;
   position: relative !important;
+  margin: auto !important;
 }
 
 .form-action h1 {
@@ -188,4 +146,70 @@ form input[type=password] {
 
 .nav-border{
   border-bottom: 2px solid #4db6ac !important;
+}
+
+ul.tabs {
+  background: #ffffff !important;
+  height: 40px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+  width: 100% !important;
+  position: relative !important;
+  display: block !important;
+  margin-bottom: 20px !important;
+  border-bottom: 2px solid #4db6ac !important;
+}
+ul.tabs li {
+  
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 0px 22px;
+  height: 40px;
+  line-height: 31px;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+ul.tabs li:hover {
+  background: #e3f2fd;
+} 
+ul.tabs li.active{
+  background: #4db6ac;
+}
+.tab_container {
+  clear: both;
+  float: left; 
+  width: 100%;
+  background: #FFFFFF;
+}
+.tab_content {
+  padding: 5px;
+  font-size: 1.2em;
+  display: none;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  ul.tabs li {
+    clear:both;
+    width: 100%;
+    padding-left:2%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+  }
+}
+@media screen and (max-width: 400px) {
+  ul.tabs li {
+    clear:both;
+    text-align:center;
+    width: 100%;
+    padding-left:2%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+  }
 }

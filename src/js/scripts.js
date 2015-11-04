@@ -1,10 +1,10 @@
 // To Read
 $(document).ready(function(){
-    //alert();
-    if(localStorage.getItem("myVar") == undefined)
-    {
-      $(location).attr('href', "login.html");
-    }
+//alert();
+  if(localStorage.getItem("myVar") == undefined)
+  {
+    $(location).attr('href', "login.html");
+  }
 });
 
 $("#btn-logout").on("click",function()
@@ -13,38 +13,10 @@ $("#btn-logout").on("click",function()
   $(location).attr('href', "login.html");
 });
 
-(function( $ ) {
-  // constants
-  var SHOW_CLASS = 'show',
-      HIDE_CLASS = 'hide',
-      ACTIVE_CLASS = 'active';
-  
-  $( '.tabs' ).on( 'click', 'li a', function(e){
-    e.preventDefault();
-    var $tab = $( this ),
-         href = $tab.attr( 'href' );
-  
-     $( '.active' ).removeClass( ACTIVE_CLASS );
-     $tab.addClass( ACTIVE_CLASS );
-  
-     $( '.show' )
-        .removeClass( SHOW_CLASS )
-        .addClass( HIDE_CLASS )
-        .hide();
-    
-      $(href)
-        .removeClass( HIDE_CLASS )
-        .addClass( SHOW_CLASS )
-        .hide()
-        .fadeIn( 550 );
-  });
-})( jQuery );
-
-
 //CANVAS
 $(function(){
   var canvas = document.querySelector('canvas'),
-      ctx = canvas.getContext('2d')
+  ctx = canvas.getContext('2d')
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   ctx.lineWidth = .3;
@@ -65,25 +37,25 @@ $(function(){
   function colorValue(min) {
     return Math.floor(Math.random() * 255 + min);
   }
-  
+
   function createColorStyle(r,g,b) {
     return 'rgba(' + r + ',' + g + ',' + b + ', 0.8)';
   }
-  
+
   function mixComponents(comp1, weight1, comp2, weight2) {
     return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
   }
-  
+
   function averageColorStyles(dot1, dot2) {
     var color1 = dot1.color,
-        color2 = dot2.color;
-    
+    color2 = dot2.color;
+
     var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
-        g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
-        b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
+    g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
+    b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
     return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b));
   }
-  
+
   function Color(min) {
     min = min || 0;
     this.r = colorValue(min);
