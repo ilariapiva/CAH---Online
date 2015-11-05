@@ -129,6 +129,7 @@ form input[type=password] {
 
 .nav-text{
   color: #000000 !important;
+  line-height: 32px !important;
 }
 
 .nav-active {
@@ -212,4 +213,47 @@ ul.tabs li.active{
     background-color: #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
   }
+}
+
+.paragraph{
+  font-size: 15px !important;
+  font-family: 'Comic Sans MS' !important;
+  color: #FFFFFF !important;
+}
+
+.teal-panel {
+    background-color: #000000 !important;
+}
+
+.h1-text{
+    font-size: 45px !important;
+    font-family: 'Comic Sans MS' !important;
+    line-height: 110% !important;
+    margin: 2.1rem 0 1.68rem 0 !important;
+    color: #00bcd4 !important;
+}
+
+.footer{
+  background-color: #FFFFFF !important;
+  position: fixed !important;
+  height: 50px !important;
+  bottom: 0px !important;
+  width: 100% !important;
+  vertical-align: middle !important;
+}
+
+.p-footer{
+  height: 15px !important;
+  margin-top: 15px !important;
+  margin-bottom: auto !important;
+  margin-left: 20px !important;
+}
+
+.right-footer{
+  float: right !important;
+  margin-right: 20px !important;
+}
+
+.left-footer{
+  float: left !important;
 }
