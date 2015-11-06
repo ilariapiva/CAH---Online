@@ -2,16 +2,19 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 <title>CAH - Online </title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <canvas></canvas>
-  <nav class="navbar navbar-inverse navbar-fixed-top nav-color" role="navigation">
+  <!--<canvas></canvas>-->
+  <nav class="navbar navbar-inverse nav-color" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -35,12 +38,14 @@
             <ul class="dropdown-menu">
               <li>
                 <a href="profilo.html" class="nav-text">Profilo</a>
+                <!--<a href="profilo.html"><i class="material-icons left">perm_identity</i>Profilo</a>-->
               </li>
               <li>
                 <a href="impostazioni.html" class="nav-text nav-border">Impostazioni</a>
+                <!--<a href="impostazioni.html"><i class="material-icons left">settings</i>Impostazioni</a>-->
               </li>
               <li>
-                <a href="login.html" class="nav-text">Logout</a>
+                <a id="btn-logout" class="nav-text">Logout</a>
               </li>
             </ul>
           </li>
@@ -48,16 +53,32 @@
       </div>
     </div>
   </nav>
-  <footer>
-    <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright &copy; Your Website 2014</p>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel teal-panel">
+            <span class="white-text">
+              <h1 class="h1-text">Le regole del gioco</h1>
+              <p class="paragraph">Le regole basilari del gioco sono:</br></br>
+                <p>&nbsp&nbsp 1. Si distribuiscono 10 carte Risposta a ciascun giocatore.</br></br>&nbsp&nbsp 2. Si sceglie chi leggerà la domanda al primo turno (master). Il master sceglie una carta Domanda (carta nera) e la legge ad alta voce.</br></br>&nbsp&nbsp 3. I giocatori scelgono in un periodo limitato di tempo la carta Risposta (carta bianca) da dare al master, cercando di scegliere la più divertente tra quelle che hanno.</br></br>&nbsp&nbsp 4. Il master mischia le carte senza vederle e legge una ad una le risposte ad alta voce.</br></br>&nbsp&nbsp 5. Il master sceglie la carta Risposta che più gli è piaciuta e la dichiara. In quel momento il giocatore che ha giocato la carta si rivela e guadagna un punto vittoria.</br></br>&nbsp&nbsp 6. Tutti i giocatori pescano le carte Risposta per tornare al numero iniziale di 10.</br></br>&nbsp&nbsp 7. Il giocatore che ha ottenuto il punto vittoria sarà il master per il turno successivo.</br></br>&nbsp&nbsp 8. Vince il giocatore con più punti vittoria.</br></br></p>
+                <p><br>Esistono ovviamente molte variabili al gioco. Gli stessi creatori invogliano lo sviluppo di nuove forme di gioco e di assegnazione dei punti.Si può decidere di inserire un master fisso, o di premiare maggiormente il cinismo o il sadismo delle risposte. 
+              </p>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-    </footer>
+  </div>
+  <footer class="footer">
+    <div class="black-text p-footer">
+      <p class="left-footer">Copyright &copy; Ilaria Piva</p>
+      <p class="right-footer">CAH - Online 2015/2016</p>
+    </div>
+  </footer>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </html>

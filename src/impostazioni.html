@@ -2,16 +2,19 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 <title>CAH - Online </title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <canvas></canvas>
-  <nav class="navbar navbar-inverse navbar-fixed-top nav-color" role="navigation">
+  <!--<canvas></canvas>-->
+  <nav class="navbar navbar-inverse nav-color" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,16 +34,18 @@
             <a href="regole.html" class="nav-text">Regole</a>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle nav-text" data-toggle="dropdown">Nome utente <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle nav-text nav-active" data-toggle="dropdown">Nome utente <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
                 <a href="profilo.html" class="nav-text">Profilo</a>
+                <!--<a href="profilo.html"><i class="material-icons left">perm_identity</i>Profilo</a>-->
               </li>
               <li>
-                <a href="impostazioni.html" class="nav-text nav-active nav-border">Impostazioni</a>
+                <a href="impostazioni.html" class="nav-text nav-border nav-active">Impostazioni</a>
+                <!--<a href="impostazioni.html"><i class="material-icons left">settings</i>Impostazioni</a>-->
               </li>
               <li>
-                <a href="login.html" class="nav-text">Logout</a>
+                <a id="btn-logout" class="nav-text">Logout</a>
               </li>
             </ul>
           </li>
@@ -48,16 +53,46 @@
       </div>
     </div>
   </nav>
-  <footer>
-    <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright &copy; Your Website 2014</p>
+  <div class="row">
+    <div class="col s6">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel teal-panel">
+            <span class="white-text">
+              <h1 class="h1-text">Descrizione del gioco</h1>
+              <p class="paragraph">CAH – Online si riferisce a <a class="link" href="https://cardsagainsthumanity.com">Cards Against Humanity</a>, un gioco da tavolo americano, basato sul sarcasmo e sull'ironia dei suoi stessi giocatori. Il gioco sfrutta la licenza Creative Commons ed è attualmente disponibile con licenza Free Download, che ne permette il download e la copia in forma completamente gratuita. Il suo titolo è un riferimento alla frase Crimini contro l'umanità, in allusione al suo contenuto politicamente scorretto.</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel teal-panel">
+            <span class="white-text">
+              <h1 class="h1-text">La nascita del gioco</h1>
+              <p class="paragraph">Il gioco è stato creato da un gruppo di studenti della scuola superiore di Highland Park, nell'Illinois, per celebrare la festa di capodanno e fu finanziato attraverso il sito web <a class="link" href="https://www.kickstarter.com">Kickstarter</a>, superando l'obiettivo prefissato di quasi il 300%. Ben Hantoot, uno dei creatori, dichiarò che lo sviluppo del gioco era in larga parte dovuto a: "8 di noi che fummo il nucleo di creatori e scrittori, 5 o 6 collaboratori occasionali e decine di amici e conoscenti che hanno giocato al gioco".</p>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-    </footer>
+    <div class="col s6">
+      <div class="row">
+          <button class="btn waves-effect waves-light btn-start-play text-btn-play" type="submit" name="action">Start a new game
+            <i class="material-icons right icon-btn-play">play_arrow</i>
+          </button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="black-text p-footer">
+      <p class="left-footer">Copyright &copy; Ilaria Piva</p>
+      <p class="right-footer">CAH - Online 2015/2016</p>
+    </div>
+  </footer>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </html>

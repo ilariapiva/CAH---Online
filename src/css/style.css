@@ -133,7 +133,7 @@ form input[type=password] {
 }
 
 .nav-active {
-  background: #4db6ac  !important;
+  background: #b3e5fc !important;
   border-right: none !important;
   -webkit-transition: all 0.5s linear !important;
   -moz-transition: all 0.5s linear !important;
@@ -177,7 +177,7 @@ ul.tabs li:hover {
   background: #e3f2fd;
 } 
 ul.tabs li.active{
-  background: #4db6ac;
+  background: #b3e5fc;
 }
 .tab_container {
   clear: both;
@@ -230,7 +230,7 @@ ul.tabs li.active{
     font-family: 'Comic Sans MS' !important;
     line-height: 110% !important;
     margin: 2.1rem 0 1.68rem 0 !important;
-    color: #00bcd4 !important;
+    color: #99CFF7 !important;
 }
 
 .footer{
@@ -256,4 +256,24 @@ ul.tabs li.active{
 
 .left-footer{
   float: left !important;
+}
+
+.btn-start-play{
+  height: 100px !important;
+  background-color: #01579b !important;
+  margin-top: 255px !important;
+  margin-bottom: auto !important;
+  margin-left: 250px !important;
+}
+
+.text-btn-play{
+  font-size: 25px !important;
+}
+
+.icon-btn-play{
+    font-size: 30px !important;
+}
+
+.link{
+  color: #c5e1a5    !important;
 }
