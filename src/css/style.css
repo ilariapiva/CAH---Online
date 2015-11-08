@@ -1,10 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Comic%20Sans%20MS);
 @import url(http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
 
+html{
+  height: 100%;
+}
+
 body {
   background: #000000 !important;
-  color: black;
-  font-family: 'Comic Sans MS';
+  color: black !important;
+  font-family: 'Comic Sans MS' !important;
+  height: 100%;
 }
 .flat-form {
   background: #ffffff ;
