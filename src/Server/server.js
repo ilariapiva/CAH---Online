@@ -30,15 +30,18 @@ io.sockets.on("connection", function(socket) {
 	});
 
 	socket.on("register", function(data) {
-		console.log("register");
-		if (data.email != "ilaria") {
-			
-				socket.emit("register_confirmed", {nclient: 15});
-		}
-		else{
-				console.log("Error login");
-				socket.emit("register_error", {err: "user error"});
-			}
+		console.log("Register");
+
+		db.db_connect();
+		db.db_register(data.email, data.user, data.password, function(res, errors){
+				if (res) {
+					socket.emit("register_confirmed", {nclient: 15});
+				}
+				else{
+						console.log("Error register");
+						socket.emit("register_error", {err: errors});
+					}
+			});
 	});
 	
 	socket.on("disconnect", function(data) {

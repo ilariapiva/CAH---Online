@@ -16,22 +16,9 @@ $(document).ready(function() {
 		console.log("Login error.", data.err);
 	});
 
-	connectBtn = $("#btn-login");
-	connectBtn.on("click", function() {
-		console.log("Botton clicked.");
-		socket.emit("login",{email: $("#email-login").val(), password: $("#password-login").val()});
-	});
-
 	socket.on("register_confirmed", function(data) {
 		console.log("Register confirmed.", data.nclient);
 		localStorage.setItem("myVar", data.nclient);
 		$(location).attr('href', "login.html");
 	});
-
-	connectBtn = $("#btn-sign");
-	connectBtn.on("click", function() {
-		console.log("Botton clicked.");
-		socket.emit("register",{email: $("#email-register").val(), password: $("#password-register").val()});
-	});
-
 });
