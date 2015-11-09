@@ -17,7 +17,8 @@ body {
   width: 390px;
   height: 355px;
   position: relative;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS' !important;
+  border-radius: 2px;
 }
 
 .form-register {
@@ -50,7 +51,7 @@ form {
 form input[type=text],
 form input[type=password],
 form input[type=submit] {
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS' !important;
 }
 
 form input[type=text],
@@ -133,25 +134,25 @@ form input[type=password] {
 }
 
 .nav-text{
-  color: #000000 !important;;
-  line-height: 19px;
+  color: #000000 !important;
+  line-height: 19px !important;
 }
 
 .nav-active {
-  background: #b3e5fc !important;;
-  border-right: none;
+  background: #b3e5fc !important;
+  border-right: none !important;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
-  background-color: #ffffff !important;;
-  color: #000000 !important;;
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .nav-border{
-  border-bottom: 2px solid #4db6ac;
+  border-bottom: 2px solid #4db6ac !important;
 }
 
 ul.tabs {
@@ -174,7 +175,6 @@ ul.tabs li {
   padding: 0px 22px;
   height: 40px;
   line-height: 31px;
-  font-weight: bold;
   overflow: hidden;
   background-color: #FFFFFF;
 }
@@ -202,7 +202,6 @@ ul.tabs li.active{
     width: 100%;
     padding-left:2%;
     cursor: pointer;
-    font-weight: bold;
     background-color: #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
   }
@@ -214,7 +213,6 @@ ul.tabs li.active{
     width: 100%;
     padding-left:2%;
     cursor: pointer;
-    font-weight: bold;
     background-color: #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
   }
@@ -222,7 +220,7 @@ ul.tabs li.active{
 
 .paragraph{
   font-size: 15px;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS' !important;
   color: #FFFFFF;
 }
 
@@ -241,7 +239,7 @@ ul.tabs li.active{
 
 .h1-text{
   font-size: 45px;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS' !important;
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0;
   color: #99CFF7;
@@ -275,20 +273,20 @@ ul.tabs li.active{
 }
 
 .btn-start-play{
-  height: auto !important;;
-  background-color: #01579b !important;;
-  margin-top: 345px !important;;
-  margin-bottom: auto !important;;
-  margin-left: 250px !important;;
+  height: auto !important;
+  background-color: #01579b !important;
+  margin-top: 345px !important;
+  margin-bottom: auto !important;
+  margin-left: 250px !important;
 }
 
 .text-btn-play{
-  font-size: 30px !important;;
-  color: #FFFFFF !important;;
+  font-size: 30px !important;
+  color: #FFFFFF !important;
 }
 
 .icon-btn-play{
-  font-size: 50px !important;;
+  font-size: 50px !important;
 }
 
 .link{
@@ -322,4 +320,80 @@ ul.tabs li.active{
   height: auto;
   color: red;
   font-size: 12px;
+}
+
+.label-form{
+  color: #0d47a1 ;
+  font-weight: bold;
+}
+
+.p4
+{
+  color: black;
+  font-weight: normal;
+}
+
+.flat-form-setting
+{
+  background: #ffffff ;
+  margin: 25px auto;
+  width: 50%;
+  height: 400px;
+  position: relative;
+  font-family: 'Comic Sans MS'!important;
+  border-radius: 2px;
+}
+
+.form-action-setting
+{
+  padding-top: 25px;
+  padding-left: 25px;
+  position: relative;
+  margin: auto;
+}
+
+.h1, .p5
+{
+  text-align: center !important;
+}
+
+.bottom-left-setting
+{
+  padding-left: 245px;
+}
+
+.form-text
+{
+  padding-top: 35px;
+}
+
+form input[type=text-setting],
+form input[type=password-setting] {
+  width: 40%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #eceff1 ;
+  border: none;
+  color: #4db6ac  ;
+  outline: none;
+}
+
+.flat-form-profile
+{
+  background: #ffffff ;
+  margin: 25px auto;
+  width: 50%;
+  height: 300px;
+  position: relative;
+  font-family: 'Comic Sans MS'!important;
+  border-radius: 2px;
+}
+
+.form-action-profile
+{
+  padding-top: 25px;
+  padding-left: 25px;
+  position: relative;
+  margin: auto;
 }
