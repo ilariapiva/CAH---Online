@@ -15,19 +15,10 @@ body {
   background: #ffffff ;
   margin: 25px auto;
   width: 390px;
-  height: 355px;
+  height: 100%;
   position: relative;
   font-family: 'Comic Sans MS' !important;
   border-radius: 2px;
-}
-
-.form-register {
-  height: 355px;
-}
-
-.form-reset
-{
-  height: 305px;
 }
 
 .form-action {
@@ -355,6 +346,11 @@ ul.tabs li.active{
 .h1, .p5
 {
   text-align: center !important;
+}
+
+.h1
+{
+  font-size: 45px !important;
 }
 
 .bottom-left-setting
