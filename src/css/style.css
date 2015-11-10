@@ -363,16 +363,16 @@ ul.tabs li.active{
   padding-top: 35px;
 }
 
-form input[type=text-setting],
-form input[type=password-setting] {
-  width: 40%;
-  height: 40px;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  background: #eceff1 ;
-  border: none;
-  color: #4db6ac  ;
-  outline: none;
+.form-input-setting
+{
+  width: 40% !important;
+  height: 40px !important;
+  margin-bottom: 10px !important;
+  padding-left: 15px !important;
+  background: #eceff1 !important;
+  border: none !important;
+  color: #4db6ac !important;
+  outline: none !important;
 }
 
 .flat-form-profile
